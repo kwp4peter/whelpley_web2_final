@@ -1,0 +1,1297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none; 
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* END CSS RESET */ 
+
+.stop-scrolling
+{
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bg3
+{
+	background: url("../images/main/photo (12).jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.bg2
+{
+	background: url("../images/main/photo (24).jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body
+{
+	background: url("../images/main/photo (55).jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face
+{
+	font-family: NeouSPLASH;
+	src: url(../assets/Neou-Bold.ttf);
+}
+
+@font-face
+{
+	font-family: FiraWELCOME;
+	src: url(../assets/FiraBook.ttf);
+}
+
+@font-face
+{
+	font-family: Script;
+	src: url(../assets/Market.ttf);
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+#welcome
+{
+	width: 400px;
+	height: 400px;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 200px;
+	font-family: FiraWELCOME;
+
+	background: url(../images/main/25-gray.png);
+	border-radius: 25px;
+
+	z-index: 999;
+}
+
+#welcome p
+{
+	width: 350px;
+	margin: 0 auto;
+	position: relative;
+	top: 15px;
+	font-size: 3vmin;
+}
+
+.welcomeHide
+{
+	opacity: 0;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#landing
+{
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+#menu
+{
+	height: 300px;
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+}
+
+#menu p
+{
+	text-shadow: 1px 1px 3px #2d2d2d;
+}
+
+#landing a
+{
+	font-family: NeouSPLASH;
+	font-style: none;
+	color: white;
+	text-decoration: none;
+
+	position: relative;
+	bottom: -50px;
+
+	-webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+#landing p
+{
+	font-size: 20px;
+
+	height: 50px;
+	line-height: 55px;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#landing li
+{
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+}
+
+/**LOADING**/
+
+#load
+{
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+#square1, #square2 
+{
+	background-color: white;
+	height: 100vh;
+	display: block;
+	position: absolute;
+	z-index: 98;
+}
+
+#gif
+{
+	z-index: 999;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: -100px;
+	bottom: 0;
+}
+
+#gif:after
+{
+	opacity: 0;
+}
+
+#square1 span, #square2 span
+{
+	visibility: hidden;
+}
+
+#square1
+{
+	width: 50%;
+	left: 0;
+}
+
+#square2
+{
+	width: 50%;
+	right: 0;
+}
+
+/**END LOADING**/
+
+/**BUTTON ANIMATIONS**/
+.gal
+{
+	min-width: 10px;
+	max-width: 175px;
+	max-height: 175px;
+	min-height: 10px;
+
+	position: relative;
+	bottom: 20px;
+
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.con
+{
+	min-width: 10px;
+	max-width: 175px;
+	max-height: 175px;
+	min-height: 10px;
+
+	position: relative;
+	bottom: 20px;
+
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.serv
+{
+	min-width: 10px;
+	max-width: 175px;
+	max-height: 175px;
+	min-height: 10px;
+
+	position: relative;
+	bottom: 20px;
+
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.hal
+{
+	min-width: 10px;
+	max-width: 175px;
+	max-height: 175px;
+	min-height: 10px;
+
+	position: relative;
+	bottom: 20px;
+
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sol
+{
+	min-width: 10px;
+	max-width: 175px;
+	max-height: 175px;
+	min-height: 10px;
+
+	position: relative;
+	bottom: 20px;
+
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+
+.galOut
+{
+	opacity: 0;
+}
+
+.servOut
+{
+	opacity: 0;
+}
+
+.halOut
+{
+	opacity: 0;
+}
+
+.solOut
+{
+	opacity: 0;
+}
+
+.conOut
+{
+	opacity: 0;
+}
+
+/**END BUTTON ANIMATIONS**/
+
+/**SECOND NAV**/
+
+.active 
+{
+	color: red;
+
+	-webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+#fixed
+{
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	height: 75px;
+	top: 0;
+	z-index: 999;
+}
+
+#fixed #logo
+{
+	margin-top: 75px;
+}
+
+#menu2
+{
+	width: 900px;
+	position: relative;
+	top: 35px;
+	margin: 0 auto;
+	display: flex;
+ 	justify-content: space-between;
+}
+
+#menu2 li
+{
+	font-size: 18px;
+	display: inline-block;
+	width: 150px;
+
+	font-family: NeouSPLASH;
+	padding: 0 5px 0 5px;
+}
+
+#menu2 a
+{
+	text-align: center;
+	text-decoration: none;
+	font-style: none;
+	color: black;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#menu2 a:hover
+{
+	color: red;
+}
+
+#logo img
+{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	top: -50px;
+}
+
+#logo
+{
+	width: 100px;
+	height: 100px;
+
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20px;
+	left: 0;
+	right: 0;
+
+	-webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+
+#gallery
+{
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#galButton p
+{
+	width: 115px;
+	margin: 0 auto;
+}
+
+#galButton:hover p
+{
+	box-shadow: inset 0 0 0 4px white;
+}
+
+#servButton p
+{
+	width: 125px;
+	margin: 0 auto;
+}
+
+#servButton:hover p
+{
+	box-shadow: inset 0 0 0 4px white;
+}
+
+
+#halButton p
+{
+	width: 170px;
+	margin: 0 auto;
+}
+
+#halButton:hover p
+{
+	box-shadow: inset 0 0 0 4px white;
+}
+
+#solButton p
+{
+	width: 170px;
+	margin: 0 auto;
+}
+
+#solButton:hover p
+{
+	box-shadow: inset 0 0 0 4px white;
+}
+
+#conButton p
+{
+	width: 160px;
+	margin: 0 auto;
+}
+
+#conButton:hover p
+{
+	box-shadow: inset 0 0 0 4px white;
+}
+
+/**END LANDING**/
+
+/**BEGIN GALLERY**/
+
+#gallery
+{
+	position: relative;
+	top: -200px;
+	width: 100%;
+	background-color: white;
+}
+
+/**END GALLERY**/
+
+/**BEGIN SERVICES **/
+
+#services
+{
+	width: 100%;
+	height: 100vh;
+	top: -100px;
+	position: relative;
+	background: url(../images/main/50-gray.png);
+}
+
+#container
+{
+	position: relative;
+	top: 300px;
+	height: 500px;
+	width: 90%;
+	margin: 0 auto;
+
+	display: flex;
+ 	justify-content: space-between;
+}
+
+#services li
+{
+	width: 250px;
+	text-align: center;
+	line-height: 25px;
+	font-family: FiraWELCOME;
+	color: white;
+	font-size: 2vmin;
+}
+
+#services img
+{
+	display: block;
+	height: auto;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+}
+
+/**END SERVICES**/
+
+/**BEGIN HALEY**/
+
+#haleyMain
+{
+	height: 100vh;
+	background-color: white;
+	border-bottom: 1px dashed #2d2d2d;
+}
+
+#halContainer
+{
+	width: 45%;
+	position: relative;
+	margin: 0 auto;
+	top: 300px;
+}
+
+#halContainer #halPort
+{
+	width: auto;
+	height: 355px;
+	float: left;
+
+	border-radius: 15px;
+}
+
+#halContainer #halType
+{
+	width: 400px;
+	height: 220px;
+	float: right;
+}
+
+#halContainer h1
+{
+	font-family: NeouSPLASH;
+	font-size: 45px;
+	padding-bottom: 15px;
+}
+
+#halContainer p
+{
+	font-family: FiraWELCOME;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+#halContainer img
+{
+	width: 32%;
+	height: auto;
+}
+/**END HALEY**/
+
+/**BEGIN SOLAH**/
+
+#solahMain
+{
+	height: 100vh;
+	background-color: white;
+}
+
+#solContainer
+{
+	width: 45%;
+	position: relative;
+	margin: 0 auto;
+	top: 200px;
+}
+
+#solContainer #solPort
+{
+	width: 355px;
+	height: auto;
+	float: left;
+
+	border-radius: 15px;
+}
+
+#solContainer #solType
+{
+	width: 400px;
+	height: 200px;
+	float: right;
+}
+
+#solContainer h1
+{
+	font-family: NeouSPLASH;
+	font-size: 45px;
+	padding-bottom: 15px;
+}
+
+#solContainer p
+{
+	font-family: FiraWELCOME;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+#solContainer img
+{
+	width: 18%;
+	height: auto;
+}
+
+/**END SOLAH**/
+
+/**BEGIN CONTACT**/
+
+#contactMain
+{
+	height: 40vh;
+	position: relative;
+	display: block;
+	top: 500px;
+}
+
+#conContainer
+{
+	position: relative;
+	bottom: 300px;
+	margin: 0 auto;
+	height: 400px;
+	width: 100%;
+	background: url(../images/main/50-gray.png);
+}
+
+#conType
+{
+	position: relative;
+	top: 75px;
+	width: 600px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	color: white;
+}
+
+#conType h1
+{
+	font-size: 50px;
+	padding-bottom: 25px;
+	font-family: Script;
+}
+
+#conType h2
+{
+	padding-top: 25px;
+	font-size: 18px;
+	font-family: NeouSPLASH;
+	letter-spacing: 8px;
+}
+
+#conType p
+{
+	font-family: FiraWELCOME;
+	font-size: 23px;
+}
+
+/**END CONTACT**/
+
+/** SMALLISH BROWSER FONT ADJUSTMENT **/
+@media screen and (max-width: 950px)
+{
+
+	#conType
+	{
+		width: 300px;
+	}
+
+	#conType h1
+	{
+		font-size: 25px;
+	}
+
+	#conType h2
+	{
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+
+	#conType p
+	{
+		font-size: 16px;
+	}
+
+	#halContainer
+	{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#halContainer #halPort
+	{
+		float: none;
+		display: block;
+		width: 25%;
+		height: auto;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#halContainer #halType
+	{
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#solContainer
+	{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#solContainer #solPort
+	{
+		float: none;
+		display: block;
+		width: 25%;
+		height: auto;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#solContainer #solType
+	{
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+
+	#menu2 li
+	{
+		font-size: 12px;
+		width: 55px;
+	}
+
+	#menu2
+	{
+		width: 500px;
+	}
+
+	#landing p
+	{
+		font-size: 15px;
+	}
+
+	#gallery p
+	{
+		width: 85px;
+		margin: 0 auto;
+	}
+
+	#services p
+	{
+		width: 95px;
+		margin: 0 auto;
+	}
+
+	#haley p
+	{
+		width: 140px;
+		margin: 0 auto;
+	}
+
+	#solah p
+	{
+		width: 140px;
+		margin: 0 auto;
+	}
+
+	#contact p
+	{
+		width: 130px;
+		margin: 0 auto;
+	}
+
+	#services
+	{
+		top: -200px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: none;
+	}
+
+	#container
+	{
+		display: block;
+		position: relative;
+		top: 110px;
+		height: 100%;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#services li
+	{
+		width: 100%;
+		text-align: center;
+		line-height: 20px;
+		font-family: FiraWELCOME;
+		color: white;
+		padding: 0 0 50px 0;
+	}
+
+	#services img
+	{
+		height: auto;
+		width: 100px;
+		margin: 0 auto;
+		padding: 0 0 20px 0;
+	}
+
+	#services p
+	{
+		min-width: 50%;
+		max-width: 70%;
+		font-size: 15px;
+	}
+
+}
+/**END SMALLISH**/
+
+
+/** BROWSER WINDOW SIZE ADJUSTMENTS **/
+@media screen and (max-width: 750px)
+{
+
+	#halContainer
+	{
+		position: relative;
+		top: 150px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#halContainer #halPort
+	{
+		float: none;
+		display: block;
+		width: 35%;
+		height: auto;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#halContainer #halType
+	{
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#solContainer
+	{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#solContainer #solPort
+	{
+		float: none;
+		display: block;
+		width: 35%;
+		height: auto;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#solContainer #solType
+	{
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#menu2 li
+	{
+		font-size: 12px;
+		width: 55px;
+	}
+
+	#menu2
+	{
+		width: 350px;
+	}
+
+	#welcome
+	{
+		visibility: hidden;
+		display: none;
+	}
+
+	.serv
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.gal
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.hal
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.sol
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.con
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	#landing p
+	{
+		line-height: 40px;
+		height: 35px;
+		font-size: 20px;
+		width: 180px;
+	}
+
+	#landing a
+	{
+		display: block;
+		font-family: NeouSPLASH;
+		font-style: none;
+		color: white;
+		text-decoration: none;
+
+		position: relative;
+		top: 70px;
+
+		height: 20px;
+		width: 180px;
+		margin: 0 auto;
+		padding: 0 0 40px 0;
+	}
+
+	#landing ul
+	{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		top: 175px;
+	}
+
+	#services
+	{
+		top: -200px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: none;
+	}
+
+	#container
+	{
+		display: block;
+		position: relative;
+		top: 110px;
+		height: 100%;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#services li
+	{
+		width: 100%;
+		text-align: center;
+		line-height: 20px;
+		font-family: FiraWELCOME;
+		color: white;
+		padding: 0 0 50px 0;
+	}
+
+	#services img
+	{
+		height: auto;
+		width: 100px;
+		margin: 0 auto;
+		padding: 0 0 20px 0;
+	}
+
+	#services p
+	{
+		min-width: 50%;
+		max-width: 70%;
+		font-size: 15px;
+	}
+}
+
+
+/** MOBILE ADJUSTMENTS **/
+@media only screen and (max-device-width: 480px) 
+{
+
+	#halContainer
+	{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#halContainer #halPort
+	{
+		float: none;
+		display: block;
+		width: 25%;
+		height: auto;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#halContainer #halType
+	{
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#solContainer
+	{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#solContainer #solPort
+	{
+		float: none;
+		display: block;
+		width: 25%;
+		height: auto;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#solContainer #solType
+	{
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#menu2 li
+	{
+		font-size: 12px;
+		width: 55px;
+	}
+
+	#menu2
+	{
+		width: 350px;
+	}
+
+	#gallery p
+	{
+		height: 50px;
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	.serv
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.gal
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.hal
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.sol
+	{
+		display: none;
+		visibility: hidden;
+	}
+
+	.con
+	{
+		display: none;
+		visibility: hidden;
+	}
+	
+	#landing
+	{
+		width: 100%;
+		position: relative;
+		top: -10px;
+		height: 400px;
+		margin-bottom: 0;
+	}
+
+	#landing p
+	{
+		text-shadow: none;
+		line-height: normal;
+		height: 0;
+		font-size: 30px;
+		width: 180px;
+	}
+
+	#landing a
+	{
+		font-family: NeouSPLASH;
+		font-style: none;
+		color: white;
+		text-decoration: none;
+		position: relative;
+		top: -20px;
+		background: none;
+	}
+
+	#landing ul
+	{
+		width: 100%;
+		position: relative;
+		top: -20px;
+	}
+
+	#landing li
+	{
+		width: 100%;
+		text-align: center;
+		padding: 0 0 30px 0;
+	}
+
+	#services
+	{
+		top: -200px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: none;
+	}
+
+	#container
+	{
+		display: block;
+		position: relative;
+		top: 110px;
+		height: 100%;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#services li
+	{
+		width: 100%;
+		text-align: center;
+		line-height: 20px;
+		font-family: FiraWELCOME;
+		color: white;
+		padding: 0 0 50px 0;
+	}
+
+	#services img
+	{
+		height: auto;
+		width: 100px;
+		margin: 0 auto;
+		padding: 0 0 20px 0;
+	}
+
+	#services p
+	{
+		min-width: 50%;
+		max-width: 70%;
+		font-size: 15px;
+	}
+}
+
+

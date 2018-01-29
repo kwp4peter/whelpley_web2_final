@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 76.3 76.3" style="enable-background:new 0 0 76.3 76.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#414141;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#353535;stroke-width:0.75;stroke-miterlimit:10;}
+</style>
+<g id="Circle">
+	<path class="st0" d="M75.3,38.1c0,20.5-16.6,37.2-37.1,37.2S1,58.7,1,38.2S17.6,1,38.1,1C58.6,1,75.2,17.5,75.3,38.1"/>
+</g>
+<g id="Frame">
+	<path class="st1" d="M45.5,57.7H21c-1.4,0-2.6-1.2-2.6-2.6V20.3c0-1.4,1.2-2.6,2.6-2.6h34.8c1.4,0,2.6,1.2,2.6,2.6v34.8
+		c0,1.4-1.2,2.6-2.6,2.6H45.5"/>
+</g>
+<g id="Sun">
+	<path class="st1" d="M49.3,28.3c-1.1-0.6-1.8-1.8-1.8-3.1c0-1.9,1.6-3.5,3.5-3.5c1.9,0,3.5,1.6,3.5,3.5s-1.6,3.5-3.5,3.5
+		C50.3,28.7,49.8,28.5,49.3,28.3"/>
+</g>
+<g id="Mountains">
+	<path class="st1" d="M58.5,49.8"/>
+	<path class="st1" d="M18.4,40.7c0,0,3-6,13-6s12,8,12,8"/>
+	<path class="st1" d="M41.4,44.7c0,0,2-4,8-4s9,4,9,4"/>
+</g>
+</svg>
